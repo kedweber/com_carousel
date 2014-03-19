@@ -77,7 +77,8 @@
 								'id'  => 'article',
 								'title' => $item->article_title,
 								'selected' => $item->articles_article_id,
-								'attribs' => array('name' => 'article_title', 'class' => 'article')
+								'attribs' => array('name' => 'article_title', 'class' => 'article'),
+                                'link_selector' => 'modal'
 							)); ?>
 						</div>
 					</div>
