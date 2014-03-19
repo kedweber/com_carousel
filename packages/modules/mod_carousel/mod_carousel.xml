@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site"
+           method="upgrade"
+        >
+	<name>Carousel</name>
+	<creationDate>November 2012</creationDate>
+    <author>Dave Li</author>
+    <authorEmail>dave@moyoweb.nl</authorEmail>
+    <authorUrl>http://www.moyoweb.nl</authorUrl>
+    <copyright>Copyright (C) 2006 - 2012 Moyo Web Architects (ICTIP B.V). All rights reserved.</copyright>
+    <license>Commercial</license>
+    <version>1.0.0</version>
+    <description>Carousel</description>
+	<files>
+		<file module="mod_carousel">mod_carousel.php</file>
+		<file>html.php</file>
+	</files>
+</extension>

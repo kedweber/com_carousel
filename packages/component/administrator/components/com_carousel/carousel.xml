@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>Carousel</name>
+    <author>Dave Li</author>
+    <creationDate>November 2013</creationDate>
+    <copyright>Copyright (C) 2013 Moyo Web Architects and Contributors. (http://www.moyoweb.nl)</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL v3</license>
+    <authorEmail>dave@moyoweb.nl</authorEmail>
+    <authorUrl>www.moyoweb.nl</authorUrl>
+    <version>1.0.0</version>
+    <description>Carousel</description>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">install/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <media folder="media">
+        <folder>com_carousel</folder>
+    </media>
+
+    <administration>
+        <menu>Carousel</menu>
+        <submenu>
+            <menu view="items" link="option=com_carousel&amp;view=items" img="class:article">Items</menu>
+        </submenu>
+
+        <files folder="admin">
+            <filename>dispatcher.php</filename>
+            <filename>nivoslider.php</filename>
+            <filename>nivoslider.xml</filename>
+            <folder>databases</folder>
+            <folder>install</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+        </files>
+
+        <languages folder="administrator/language">
+            <language tag="en-GB">en-GB/en-GB.com_carousel.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.com_carousel.ini</language>
+        </languages>
+    </administration>
+</extension>
