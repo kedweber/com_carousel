@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.6">
+    <name>Carousel Package</name>
+    <author>Jasper van Rijbroek</author>
+    <creationDate>March 2014</creationDate>
+    <packagename>carousel</packagename>
+    <version>1.0.0</version>
+    <url>http://www.moyoweb.nl/</url>
+    <packager>Jasper van Rijbroek</packager>
+    <packagerurl>http://www.moyoweb.nl/</packagerurl>
+    <description>Router Package</description>
+    <files folder="packages">
+        <file type="component" id="carousel">component</file>
+	    <file type="module" id="carousel" client="site">module</file>
+    </files>
+</extension>
