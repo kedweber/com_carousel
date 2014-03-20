@@ -35,6 +35,7 @@
 			<folder>install</folder>
 			<folder>language</folder>
 			<folder>models</folder>
+			<folder>templates</folder>
 			<folder>views</folder>
 		</files>
 
