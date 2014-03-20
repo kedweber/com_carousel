@@ -19,6 +19,20 @@ CREATE TABLE IF NOT EXISTS `#__carousel_items` (
   PRIMARY KEY (`carousel_item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+CREATE TABLE `#__carousel_categories` (
+  `carousel_category_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `created_on` datetime NOT NULL,
+  `created_by` int(11) NOT NULL,
+  `modified_on` datetime NOT NULL,
+  `modified_by` int(11) NOT NULL,
+  `locked_on` datetime NOT NULL,
+  `locked_by` int(11) NOT NULL,
+  `enabled` tinyint(1) NOT NULL,
+  `ordering` int(11) NOT NULL,
+  PRIMARY KEY (`carousel_category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- ----------------------------
 --  Records of `#__cck_fieldsets`
 -- ----------------------------

@@ -1,9 +1,7 @@
 <? defined('KOOWA') or die; ?>
 
 <?= @helper('behavior.mootools'); ?>
-<!--
 <script src="media://lib_koowa/js/koowa.js" />
--->
 
 <div class="row-fluid">
     <form action="" method="get" class="-koowa-grid" data-toolbar=".toolbar-list">

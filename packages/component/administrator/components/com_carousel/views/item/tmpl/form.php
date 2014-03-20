@@ -51,6 +51,16 @@
                         <input type="text" name="slug" value="<?= $item->slug ?>" placeholder="<?= @text('Slug'); ?>" />
                     </div>
                 </div>
+                <div class="control-group">
+                    <label class="control-label"><?= @text('Category'); ?></label>
+                    <div class="controls">
+                        <?= @helper('com://admin/carousel.template.helper.listbox.categories', array(
+                            'text' => 'title',
+                            'selected' => $item->carousel_category_id,
+                            'name' => 'carousel_category_id'
+                        )); ?>
+                    </div>
+                </div>
 			</fieldset>
 
 			<fieldset>
@@ -58,11 +68,15 @@
 				<div class="control-group">
 					<div class="controls link">
 						<label class="radio">
-							<input type="radio" name="use_url" data-target="article" <?= $item->articles_article_id ? 'checked' : ''; ?>>
+							<input type="radio" name="use_url" value="1" data-target="article" <?= ($item->use_url == 1) ? 'checked' : ''; ?>>
 							<?= @text('USE_ARTICLE_LINK');?>
 						</label>
+                        <label class="radio">
+                            <input type="radio" name="use_url" value="2" data-target="category" <?= ($item->use_url == 2) ? 'checked' : ''; ?>>
+                            <?= @text('USE_CATEGORY_LINK');?>
+                        </label>
 						<label class="radio">
-							<input type="radio" name="use_url" data-target="external" <?= $item->url ? 'checked' : ''; ?>>
+							<input type="radio" name="use_url" value="3" data-target="external" <?= ($item->use_url == 3) ? 'checked' : ''; ?>>
 							<?= @text('USE_EXTERNAL_LINK');?>
 						</label>
 					</div>
@@ -83,6 +97,22 @@
 						</div>
 					</div>
 				</div>
+
+                <div class="control-group hidden">
+                    <label class="control-label"><?= @text('Category'); ?></label>
+                    <div class="controls">
+                        <div class="input-append">
+                            <?= @helper('com://admin/makundi.template.helper.listbox.categories', array(
+                                'attribs' => array(
+                                    'id' => 'category'
+                                ),
+                                'text' => 'title',
+                                'selected' => $item->makundi_category_id,
+                                'name' => 'makundi_category_id'
+                            )); ?>
+                        </div>
+                    </div>
+                </div>
 
 				<div class="control-group hidden">
 					<label class="control-label"><?= @text('URL'); ?></label>
