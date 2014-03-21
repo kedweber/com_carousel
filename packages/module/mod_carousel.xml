@@ -13,6 +13,7 @@
     <description>Carousel</description>
 	<files>
 		<file module="mod_carousel">mod_carousel.php</file>
+		<file>html.php</file>
 		<folder>tmpl</folder>
 	</files>
 </extension>
