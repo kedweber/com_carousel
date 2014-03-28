@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `#__carousel_items` (
   `makundi_category_id` int(11) NOT NULL,
   `url` varchar(255) NOT NULL,
   `use_url` tinyint(1) NOT NULL,
-  `carousel_category_id` bigint(20) NOT NULL
+  `carousel_category_id` bigint(20) NOT NULL,
   `fields` text NOT NULL,
   PRIMARY KEY (`carousel_item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
