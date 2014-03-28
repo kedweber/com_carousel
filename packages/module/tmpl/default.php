@@ -5,7 +5,7 @@
             <div class="item <?= $first ? "active" : null; ?>">
                 <? $first = false; ?>
 
-                <?= @service('com://admin/cloudinary.controller.image')->path($item->image)->width(1170)->height(350)->gravity('north')->quality($width ? 20 : 60)->cache(0)->display(); ?>
+                <?= @service('com://admin/cloudinary.controller.image')->path($item->image)->width(1170)->height(350)->gravity('north')->quality($width ? 20 : 60)->cache(1)->display(); ?>
 				<div class="carousel-caption">
 					<h1><?= $item->title; ?></h1>
 					<?= $item->fulltext; ?>
