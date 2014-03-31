@@ -38,24 +38,23 @@
     <div class="row-fluid">
         <div class="span8">
             <fieldset>
-                <legend><?= @text('Content'); ?></legend>
+                <legend><?= @text('CONTENT'); ?></legend>
                 <div class="control-group">
-                    <label class="control-label"><?= @text('Title'); ?></label>
+                    <label class="control-label"><?= @text('TITLE'); ?></label>
                     <div class="controls">
-                        <input class="required" type="text" name="title" value="<?= $item->title ?>" placeholder="<?= @text('Title'); ?>" />
+                        <input class="required" type="text" name="title" value="<?= $item->title ?>" placeholder="<?= @text('TITLE'); ?>" />
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?= @text('Slug'); ?></label>
+                    <label class="control-label"><?= @text('SLUG'); ?></label>
                     <div class="controls">
                         <input type="text" name="slug" value="<?= $item->slug ?>" placeholder="<?= @text('Slug'); ?>" />
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?= @text('Category'); ?></label>
+                    <label class="control-label"><?= @text('CATEGORY'); ?></label>
                     <div class="controls">
                         <?= @helper('com://admin/carousel.template.helper.listbox.categories', array(
-                            'text' => 'title',
                             'selected' => $item->carousel_category_id,
                             'name' => 'carousel_category_id'
                         )); ?>
@@ -64,19 +63,19 @@
 			</fieldset>
 
 			<fieldset>
-				<legend><?= @text('Link'); ?></legend>
+				<legend><?= @text('LINK'); ?></legend>
 				<div class="control-group">
 					<div class="controls link">
 						<label class="radio">
-							<input type="radio" name="use_url" value="1" data-target="article" <?= ($item->use_url == 1) ? 'checked' : ''; ?>>
+							<input type="radio" name="use_url" value="1" data-target="article" <?= ($item->use_url == 0) ? 'checked' : ''; ?>>
 							<?= @text('USE_ARTICLE_LINK');?>
 						</label>
                         <label class="radio">
-                            <input type="radio" name="use_url" value="2" data-target="category" <?= ($item->use_url == 2) ? 'checked' : ''; ?>>
+                            <input type="radio" name="use_url" value="2" data-target="category" <?= ($item->use_url == 1) ? 'checked' : ''; ?>>
                             <?= @text('USE_CATEGORY_LINK');?>
                         </label>
 						<label class="radio">
-							<input type="radio" name="use_url" value="3" data-target="external" <?= ($item->use_url == 3) ? 'checked' : ''; ?>>
+							<input type="radio" name="use_url" value="3" data-target="external" <?= ($item->use_url == 2) ? 'checked' : ''; ?>>
 							<?= @text('USE_EXTERNAL_LINK');?>
 						</label>
 					</div>
@@ -99,7 +98,7 @@
 				</div>
 
                 <div class="control-group hidden">
-                    <label class="control-label"><?= @text('Category'); ?></label>
+                    <label class="control-label"><?= @text('CATEGORY'); ?></label>
                     <div class="controls">
                         <div class="input-append">
                             <?= @helper('com://admin/makundi.template.helper.listbox.categories', array(
@@ -122,7 +121,7 @@
 				</div>
 
 				<div class="control-group">
-					<label class="control-label"><?= @text('Call-to-action Button'); ?></label>
+					<label class="control-label"><?= @text('CALL-TO-ACTION_BUTTON'); ?></label>
 					<div class="controls">
 						<input class="required" type="text" name="read_more_text" value="<?= $item->read_more_text ? $item->read_more_text  : @text('LEARN_MORE'); ?>"" />
 					</div>
@@ -130,7 +129,7 @@
 			</fieldset>
 
             <fieldset>
-                <legend><?= @text('Fieldset'); ?></legend>
+                <legend><?= @text('FIELDS'); ?></legend>
                 <?= @service('com://admin/cck.controller.element')->cck_fieldset_id($item->cck_fieldset_id)->row($item->id)->table('carousel_items')->getView()->assign('row', $item)->layout('list')->display(); ?>
             </fieldset>
         </div>

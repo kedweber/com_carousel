@@ -11,7 +11,7 @@ class ComCarouselDatabaseTableItems extends KDatabaseTableDefault
                 'modifiable',
                 'identifiable',
                 'orderable',
-                'sluggable',
+				'com://admin/moyo.database.behavior.sluggable',
                 'com://admin/cck.database.behavior.elementable',
                 'com://admin/taxonomy.database.behavior.relationable',
                 'com://admin/translations.database.behavior.translatable',

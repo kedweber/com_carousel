@@ -7,17 +7,17 @@
     <div class="row-fluid">
         <div class="span8">
             <fieldset>
-                <legend><?= @text('Content'); ?></legend>
+                <legend><?= @text('CONTENT'); ?></legend>
                 <div class="control-group">
-                    <label class="control-label"><?= @text('Title'); ?></label>
+                    <label class="control-label"><?= @text('TITLE'); ?></label>
                     <div class="controls">
-                        <input class="required" type="text" name="title" value="<?= $item->title ?>" placeholder="<?= @text('Title'); ?>" />
+                        <input class="required" type="text" name="title" value="<?= $category->title; ?>" placeholder="<?= @text('TITLE'); ?>" />
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?= @text('Slug'); ?></label>
+                    <label class="control-label"><?= @text('SLUG'); ?></label>
                     <div class="controls">
-                        <input type="text" name="slug" value="<?= $item->slug ?>" placeholder="<?= @text('Slug'); ?>" />
+                        <input type="text" name="slug" value="<?= $category->slug; ?>" placeholder="<?= @text('SLUG'); ?>" />
                     </div>
                 </div>
             </fieldset>
