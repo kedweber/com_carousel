@@ -6,14 +6,9 @@ class ComCarouselDatabaseRowItem extends ComCarouselDatabaseRowDefault
 	{
 		switch ($this->use_url) {
 			case 0:
-				$article = $this->getService('com://admin/articles.model.articles')->id($this->articles_article_id)->getItem();
-				if($article->isRelationable()) {
-					$category = $article->getAncestors(array(
-						'filter' => array(
-							'type' => 'category'
-						)
-					))->top();
-				}
+				$article = $this->getService('com://site/articles.model.articles')->id($this->articles_article_id)->getItem();
+
+				$category = $article->category->top();
 				break;
 			case 1:
 				$category = $this->getService('com://admin/makundi.model.categories')->id($this->makundi_category_id)->getItem();

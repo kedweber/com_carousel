@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `#__carousel_items` (
   PRIMARY KEY (`carousel_item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-CREATE TABLE `#__carousel_categories` (
+CREATE TABLE IF NOT EXISTS `#__carousel_categories` (
   `carousel_category_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL,

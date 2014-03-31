@@ -19,11 +19,11 @@
 				</th>
 				<? if($items->isTranslatable()) : ?>
 					<th>
-						<?= @text('Translations') ?>
+						<?= @text('TRANSLATIONS') ?>
 					</th>
 				<? endif; ?>
 				<th>
-					<?= @text('Owner'); ?>
+					<?= @text('OWNER'); ?>
 				</th>
 				<th>
 					<?= @helper('grid.sort', array('column' => 'created_on', 'title' => @text('Date'))); ?>
@@ -85,7 +85,7 @@
             <? if (!count($items)) : ?>
             <tr>
                 <td colspan="8" align="center">
-                    <?= @text('CAROUSEL_NO_ITEMS') ?>
+                    <?= @text('NO_ITEMS') ?>
                 </td>
             </tr>
                 <? endif; ?>

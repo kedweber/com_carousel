@@ -18,8 +18,8 @@ class ComCarouselModelItems extends ComDefaultModelDefault
         parent::_buildQueryJoins($query);
 
         // Optionally join the articles if the article link is used.
+		$query->select('articles.title AS article_title');
         $query->join('left outer', '#__articles_articles AS articles', 'tbl.articles_article_id = articles.articles_article_id');
-        $query->select('articles.title AS article_title');
     }
 
     /**

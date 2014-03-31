@@ -11,6 +11,6 @@
     <description>Router Package</description>
     <files folder="packages">
         <file type="component" id="carousel">component</file>
-	    <file type="module" id="carousel" client="site">module</file>
+	    <file type="module" id="carousel" client="site">modules/mod_carousel</file>
     </files>
 </extension>
