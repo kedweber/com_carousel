@@ -10,6 +10,7 @@ class ComCarouselModelItems extends ComDefaultModelDefault
         parent::__construct($config);
 
         $this->_state
+            ->insert('carousel_category_id', 'int')
             ->insert('enabled', 'int')
         ;
     }
@@ -33,6 +34,10 @@ class ComCarouselModelItems extends ComDefaultModelDefault
 
         if(is_numeric($state->enabled)) {
             $query->where('tbl.enabled', '=', $state->enabled);
+        }
+
+        if($state->carousel_category_id) {
+            $query->where('tbl.carousel_category_id', '=', $state->carousel_category_id);
         }
     }
 }

@@ -7,7 +7,7 @@ class ModCarouselHtml extends ModDefaultHtml
      */
     public function display()
 	{
-        $model = $this->getService('com://admin/carousel.model.items');
+        $model = $this->getService('com://admin/carousel.model.items')->carousel_category_id($this->module->params->category_id);
 
         $items = $model->enabled(1)->getList();
 

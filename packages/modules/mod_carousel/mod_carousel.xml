@@ -16,4 +16,17 @@
 		<file>html.php</file>
 		<folder>tmpl</folder>
 	</files>
+
+	<config>
+		<fields name="params" addfieldpath="administrator/components/com_carousel/fields">
+			<fieldset name="basic">
+				<field
+						name="category_id"
+						type="categorylist"
+						label="Category"
+						description="Select the category to display"
+						/>
+			</fieldset>
+		</fields>
+	</config>
 </extension>
