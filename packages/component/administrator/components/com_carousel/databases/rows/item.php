@@ -1,6 +1,6 @@
 <?php
 
-class ComCarouselDatabaseRowItem extends ComCarouselDatabaseRowDefault
+class ComCarouselDatabaseRowItem extends KDatabaseRowDefault
 {
     public function getCategoryTitle()
 	{
