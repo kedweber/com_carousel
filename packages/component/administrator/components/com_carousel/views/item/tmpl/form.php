@@ -67,15 +67,15 @@
 				<div class="control-group">
 					<div class="controls link">
 						<label class="radio">
-							<input type="radio" name="use_url" value="1" data-target="article" <?= ($item->use_url == 0) ? 'checked' : ''; ?>>
+							<input type="radio" name="use_url" value="0" data-target="article" <?= ($item->use_url == 0) ? 'checked' : ''; ?>>
 							<?= @text('USE_ARTICLE_LINK');?>
 						</label>
                         <label class="radio">
-                            <input type="radio" name="use_url" value="2" data-target="category" <?= ($item->use_url == 1) ? 'checked' : ''; ?>>
+                            <input type="radio" name="use_url" value="1" data-target="category" <?= ($item->use_url == 1) ? 'checked' : ''; ?>>
                             <?= @text('USE_CATEGORY_LINK');?>
                         </label>
 						<label class="radio">
-							<input type="radio" name="use_url" value="3" data-target="external" <?= ($item->use_url == 2) ? 'checked' : ''; ?>>
+							<input type="radio" name="use_url" value="2" data-target="external" <?= ($item->use_url == 2) ? 'checked' : ''; ?>>
 							<?= @text('USE_EXTERNAL_LINK');?>
 						</label>
 					</div>
