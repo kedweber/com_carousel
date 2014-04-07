@@ -9,7 +9,7 @@ class ModCarouselHtml extends ModDefaultHtml
 	{
         $model = $this->getService('com://admin/carousel.model.items')->carousel_category_id($this->module->params->category_id);
 
-        $items = $model->enabled(1)->getList();
+        $items = $model->enabled(1)->sort('created_on')->direction('desc')->getList();
 
 		$this->assign('items', $items);
         $this->assign('total', $model->getTotal());

@@ -8,7 +8,7 @@ class ComCarouselDatabaseRowItem extends KDatabaseRowDefault
 			case 0:
 				$article = $this->getService('com://site/articles.model.articles')->id($this->articles_article_id)->getItem();
 
-				$category = $article->category->top();
+				$category = $article->category;
 				break;
 			case 1:
 				$category = $this->getService('com://admin/makundi.model.categories')->id($this->makundi_category_id)->getItem();
@@ -28,7 +28,7 @@ class ComCarouselDatabaseRowItem extends KDatabaseRowDefault
 				$link = JRoute::_('index.php?option=com_articles&view=article&id=' . $this->articles_article_id);
 				break;
 			case 1:
-				$link = JRoute::_('index.php?option=com_articles&view=article&category_id=' . $this->makundi_category_id);
+				$link = JRoute::_('index.php?option=com_makundi&view=category&id=' . $this->makundi_category_id);
 				break;
 			case 2:
 				$link = $this->getService('com://site/moyo.template.helper.parser')->link(array('url' => $this->url));
