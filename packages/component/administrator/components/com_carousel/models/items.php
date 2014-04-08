@@ -10,6 +10,8 @@ class ComCarouselModelItems extends ComDefaultModelDefault
         parent::__construct($config);
 
         $this->_state
+            ->insert('sort'     , 'cmd', 'ordering')
+            ->insert('direction', 'word', 'asc')
             ->insert('carousel_category_id', 'int')
             ->insert('enabled', 'int')
         ;
