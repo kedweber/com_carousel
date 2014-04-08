@@ -52,11 +52,14 @@
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?= @text('CATEGORY'); ?></label>
+                    <label class="control-label"><?= @text('CATEGORY'); ?>*</label>
                     <div class="controls">
                         <?= @helper('com://admin/carousel.template.helper.listbox.categories', array(
                             'selected' => $item->carousel_category_id,
-                            'name' => 'carousel_category_id'
+                            'name' => 'carousel_category_id',
+                            'attribs' => array(
+                                'class' => 'required'
+                            )
                         )); ?>
                     </div>
                 </div>
@@ -131,6 +134,18 @@
             <fieldset>
                 <legend><?= @text('FIELDS'); ?></legend>
                 <?= @service('com://admin/cck.controller.element')->cck_fieldset_id($item->cck_fieldset_id)->row($item->id)->table('carousel_items')->getView()->assign('row', $item)->layout('list')->display(); ?>
+            </fieldset>
+        </div>
+        <div class="span4">
+            <fieldset>
+                <legend><?= @text('DETAILS'); ?></legend>
+
+                <div class="control-group">
+                    <label class="control-label"><?= @text('Translated'); ?></label>
+                    <div class="controls">
+                        <?= @helper('select.booleanlist', array('name' => 'translated', 'selected' => $item->translated)); ?>
+                    </div>
+                </div>
             </fieldset>
         </div>
     </div>
