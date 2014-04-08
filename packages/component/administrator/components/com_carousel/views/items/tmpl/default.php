@@ -29,7 +29,7 @@
 					<?= @helper('grid.sort', array('column' => 'created_on', 'title' => @text('Date'))); ?>
 				</th>
 				<th>
-					<?= @helper('grid.sort', array('column' => 'order', 'title' => @text('ORDER'))); ?>
+					<?= @helper('grid.sort', array('column' => 'ordering', 'title' => @text('ORDER'))); ?>
 				</th>
 				<th>
 					<?= @helper('grid.sort', array('column' => 'id', 'title' => @text('ID'))); ?>
