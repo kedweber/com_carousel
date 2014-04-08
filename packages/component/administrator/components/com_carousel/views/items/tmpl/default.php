@@ -14,6 +14,9 @@
                 <th>
                     <?= @helper('grid.sort', array('column' => 'title', 'title' => @text('TITLE'))); ?>
                 </th>
+                <th>
+                    <?= @helper('grid.sort', array('column' => 'carousel_category_id', 'title' => @text('CATEGORY'))); ?>
+                </th>
 				<th>
 					<?= @helper('grid.sort', array('column' => 'enabled', 'title' => @text('PUBLISHED'))); ?>
 				</th>
@@ -55,6 +58,9 @@
                     <a href="<?= @route('view=item&id='.$item->id); ?>">
                         <?= $item->title; ?>
                     </a>
+                </td>
+                <td>
+                    <?= $item->category_title; ?>
                 </td>
 				<td>
 					<?= @helper('grid.enable', array('row' => $item)); ?>

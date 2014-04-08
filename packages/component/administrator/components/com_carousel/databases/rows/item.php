@@ -40,4 +40,16 @@ class ComCarouselDatabaseRowItem extends KDatabaseRowDefault
 
 		return $link;
     }
+
+    public function __get($key)
+    {
+        if($key == 'category_title')
+        {
+            return $this->getService('com://admin/carousel.model.category')->id($this->carousel_category_id)->getItem()->title;
+        }
+        else
+        {
+            return parent::__get($key);
+        }
+    }
 }
