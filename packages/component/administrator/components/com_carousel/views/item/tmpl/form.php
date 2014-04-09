@@ -141,6 +141,13 @@
                 <legend><?= @text('DETAILS'); ?></legend>
 
                 <div class="control-group">
+                    <label class="control-label"><?= @text('PUBLISHED'); ?></label>
+                    <div class="controls">
+                        <?= @helper('select.booleanlist', array('name' => 'enabled', 'selected' => $item->enabled)); ?>
+                    </div>
+                </div>
+
+                <div class="control-group">
                     <label class="control-label"><?= @text('Translated'); ?></label>
                     <div class="controls">
                         <?= @helper('select.booleanlist', array('name' => 'translated', 'selected' => $item->translated)); ?>
