@@ -20,9 +20,10 @@
         <files folder="administrator/components/com_carousel">
             <filename>dispatcher.php</filename>
             <filename>carousel.php</filename>
-            <filename>carousel.xml</filename>
-            <filename>manifest.xml</filename>
+
+            <folder>controllers</folder>
             <folder>databases</folder>
+            <folder>fields</folder>
             <folder>install</folder>
             <folder>language</folder>
             <folder>models</folder>
