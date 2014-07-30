@@ -60,7 +60,7 @@
                     </a>
                 </td>
                 <td>
-                    <?= $item->category_title; ?>
+                    <?= $item->category_title ? $item->category_title : @text('UNCATEGORIZED'); ?>
                 </td>
 				<td>
 					<?= @helper('grid.enable', array('row' => $item)); ?>
