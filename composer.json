@@ -1,9 +1,9 @@
 {
-    "name": "moyo/carousel",
+    "name": "cta/carousel",
     "type": "joomlatools-installer",
     "description": "Carousel Package",
     "keywords": ["joomla", "moyo"],
-    "homepage": "https://moyoweb.assembla.com/code/moyo-content/git-18/nodes",
+    "homepage": "https://github.com/cta-int/carousel",
     "authors": [
         {
             "name": "Jasper van Rijbriek",
