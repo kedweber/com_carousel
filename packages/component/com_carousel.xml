@@ -18,8 +18,8 @@
 
     <administration>
         <files folder="administrator/components/com_carousel">
-            <filename>dispatcher.php</filename>
-            <filename>carousel.php</filename>
+            <file>dispatcher.php</file>
+            <file>carousel.php</file>
 
             <folder>controllers</folder>
             <folder>databases</folder>
