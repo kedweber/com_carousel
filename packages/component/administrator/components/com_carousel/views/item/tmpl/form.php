@@ -87,32 +87,28 @@
 				<div class="control-group hidden">
 					<label class="control-label"><?= @text('ARTICLE'); ?></label>
 					<div class="controls">
-						<div class="input-append">
-							<?= @helper('com://admin/articles.template.helper.modal.article', array(
-								'name'  => 'articles_article_id',
-								'id'  => 'article',
-								'title' => $item->article_title,
-								'selected' => $item->articles_article_id,
-								'attribs' => array('name' => 'article_title', 'class' => 'article'),
-                                'link_selector' => 'modal'
-							)); ?>
-						</div>
+                        <?= @helper('com://admin/articles.template.helper.modal.article', array(
+                            'name'  => 'articles_article_id',
+                            'id'  => 'article',
+                            'title' => $item->article_title,
+                            'selected' => $item->articles_article_id,
+                            'attribs' => array('name' => 'article_title', 'class' => 'article'),
+                            'link_selector' => 'modal'
+                        )); ?>
 					</div>
 				</div>
 
                 <div class="control-group hidden">
                     <label class="control-label"><?= @text('CATEGORY'); ?></label>
                     <div class="controls">
-                        <div class="input-append">
-                            <?= @helper('com://admin/makundi.template.helper.listbox.categories', array(
-                                'attribs' => array(
-                                    'id' => 'category'
-                                ),
-                                'text' => 'title',
-                                'selected' => $item->makundi_category_id,
-                                'name' => 'makundi_category_id'
-                            )); ?>
-                        </div>
+                        <?= @helper('com://admin/makundi.template.helper.listbox.categories', array(
+                            'attribs' => array(
+                                'id' => 'category'
+                            ),
+                            'text' => 'title',
+                            'selected' => $item->makundi_category_id,
+                            'name' => 'makundi_category_id'
+                        )); ?>
                     </div>
                 </div>
 
