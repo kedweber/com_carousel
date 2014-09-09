@@ -9,7 +9,7 @@
     <authorUrl>http://www.moyoweb.nl</authorUrl>
     <copyright>Copyright (C) 2006 - 2012 Moyo Web Architects (ICTIP B.V). All rights reserved.</copyright>
     <license>Commercial</license>
-    <version>1.0.0</version>
+    <version>1.0.5</version>
     <description>Carousel</description>
 	<files>
 		<file module="mod_carousel">mod_carousel.php</file>
