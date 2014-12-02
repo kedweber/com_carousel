@@ -25,9 +25,9 @@ section:
 
 ```json
 {
-    "name": "moyo/carousel",
+    "name": "cta-int/carousel",
     "type": "vcs",
-    "url": "https://git.assembla.com/moyo-content.carousel.git"
+    "url": "https://github.com/cta-int/cck.git"
 }
 ```
 
@@ -37,7 +37,7 @@ The require section should contain the following line:
     "moyo/carousel": "1.0.*",
 ```
 
-Afterward, just run `composer update` from the root of your Joomla project.
+Afterward, just run `composer install` from the root of your Joomla project.
 
 ### jsymlinker
 
