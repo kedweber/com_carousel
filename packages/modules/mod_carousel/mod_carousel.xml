@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site"
-           method="upgrade"
-        >
+<extension type="module" version="2.5" client="site" method="upgrade">
 	<name>Carousel</name>
 	<creationDate>November 2012</creationDate>
     <author>Dave Li</author>
@@ -9,7 +7,7 @@
     <authorUrl>http://www.moyoweb.nl</authorUrl>
     <copyright>Copyright (C) 2006 - 2012 Moyo Web Architects (ICTIP B.V). All rights reserved.</copyright>
     <license>Commercial</license>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
     <description>Carousel</description>
 	<files>
 		<file module="mod_carousel">mod_carousel.php</file>
@@ -20,12 +18,7 @@
 	<config>
 		<fields name="params" addfieldpath="administrator/components/com_carousel/fields">
 			<fieldset name="basic">
-				<field
-						name="category_id"
-						type="categorylist"
-						label="Category"
-						description="Select the category to display"
-						/>
+				<field name="category_id" type="categorylist" label="Category" description="Select the category to display"/>
 			</fieldset>
 		</fields>
 	</config>

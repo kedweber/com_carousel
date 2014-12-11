@@ -2,7 +2,7 @@
     "name": "cta/carousel",
     "type": "joomlatools-installer",
     "description": "Carousel Package",
-    "keywords": ["joomla", "moyo"],
+    "keywords": ["joomla", "nooku", "carousel"],
     "homepage": "https://github.com/cta-int/carousel",
     "authors": [
         {
