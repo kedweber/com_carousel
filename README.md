@@ -23,18 +23,30 @@ Carousel-module written in Koowa Framework. Should work in Joomla 2.5, 3.X and N
 Installation is done through composer. In your `composer.json` file, you should add the following lines to the repositories
 section:
 
+From this alternative library;
+
 ```json
 {
-    "name": "cta-int/carousel",
+    "name": "moyo/carousel",
     "type": "vcs",
-    "url": "https://github.com/cta-int/cck.git"
+    "url": "https://github.com/kedweber/com_carousel.git"
+}
+```
+
+or the official developer's repository;
+
+```json
+{
+    "name": "moyo/carousel",
+    "type": "vcs",
+    "url": "https://github.com/moyoweb/com_carousel.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "moyo/carousel": "1.0.*",
+    "moyo/com_carousel": "1.0.*",
 ```
 
 Afterward, just run `composer install` from the root of your Joomla project.
@@ -56,7 +68,6 @@ carousel merely has a title. A slug is automatically generated through `com_moyo
 
 ### Items
 
-One can populate carousels by adding items to categories. Carousel items are part of our CCK. That is: carousel items are
-saved as instantiations of a field set and are translatable.
+One can populate carousels by adding items to categories. Carousel items are part of our CCK. That is: carousel items are saved as instantiations of a field set and are translatable.
 
 A carousel item can link to a category, an article or an external link.
