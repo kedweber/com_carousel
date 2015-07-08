@@ -1,9 +1,9 @@
 {
-    "name": "cta/carousel",
+    "name": "moyo/carousel",
     "type": "joomlatools-installer",
     "description": "Carousel Package",
     "keywords": ["joomla", "nooku", "carousel"],
-    "homepage": "https://github.com/cta-int/carousel",
+    "homepage": "https://github.com/kedweber/com_carousel",
     "authors": [
         {
             "name": "Jasper van Rijbriek",
